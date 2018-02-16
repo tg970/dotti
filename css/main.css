@@ -15,11 +15,23 @@ h1 {
 
 #heroShot {
   background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #logo {
   padding-top: 2em;
   padding-left: 2em;
+  max-width: 20em;
+}
+
+.subHead {
+  color: #fff;
+  padding-left: 2.6em;
+  padding-bottom: 2em;
+  font-style: normal;
+  font-weight: 300;
 }
 
 #content{
@@ -38,6 +50,20 @@ h1 {
   align-items: center;
   justify-content: space-around;
   text-align: center;
+}
+
+.contentWrap > h1 {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 75px;
+  letter-spacing: 2px;
+}
+
+.contentWrap > p {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29.4px;
+  letter-spacing: 1.26px;
 }
 
 #heroVideo {

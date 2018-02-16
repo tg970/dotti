@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>Dotti Agency</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" charset="utf-8"></script>
     <script src="js/app.js" charset="utf-8"></script>
   </head>
-  <body>
+  <body ng-app='dotti_App' ng-controller='MainController as ctrl'>
     <div class="frame" id="heroShot">
-      <h1 id="logo" >Dotti</h1>
+      <h1 id="logo">{{ctrl.test}}</h1>
     </div>
     <div class="frame" id="content">
       <div class="contentWrap">
@@ -20,12 +21,8 @@
         </p>
       </div>
     </div>
-    <div class="frame" id="heroVideo">
-      <h1>demo reel</h1>
-      <!-- <video src="videofile.ogg" autoplay poster="posterimage.jpg">
-
-      </video> -->
-    </div>
+    <iframe class="frame" id="heroVideo" src="https://player.vimeo.com/video/162130313?autoplay=1&loop=1&color=ffffff&title=0&byline=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+    </iframe>
     <div class="frame" id="content">
       <div class="contentProjects">
         <strong><h1>Our Work</h1></strong>
@@ -34,7 +31,7 @@
       <!-- <div class="project">
 
       </div> -->
-      <iframe class="project" src="https://player.vimeo.com/video/212123209?autoplay=1&color=ffffff&title=0&byline=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <iframe class="project" src="https://player.vimeo.com/video/212123209?color=ffffff&title=0&byline=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
     <div class="frame" id="content">
       <div class="contentTeam">

@@ -63,3 +63,36 @@ h1 {
   align-items: center;
   justify-content: space-around;
 }
+
+.contentProjects {
+  width: 60%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+strong {
+  margin-top: 2em;
+}
+.team {
+  width: 60%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dude {
+  width: 40%;
+  height: 80%;
+  background-color: gray;
+}
+
+footer {
+  height: 50vh;
+  background-color: black
+}

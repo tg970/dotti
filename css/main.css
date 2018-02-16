@@ -54,14 +54,19 @@ h1 {
   text-align: center;
 }
 
+md-tabs, iframe {
+  width: 100%;
+  height: 100%;
+}
+
 .project {
   width: 80%;
   height: 70%;
   /* background-color: blue; */
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around; */
 }
 
 .contentProjects {

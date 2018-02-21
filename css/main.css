@@ -14,7 +14,10 @@ h1 {
 }
 
 #heroShot {
-  background-color: green;
+  background-image: url('../img/cards.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,6 +30,7 @@ h1 {
 }
 
 .subHead {
+  margin: 0;
   color: #fff;
   padding-left: 2.6em;
   padding-bottom: 2em;

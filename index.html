@@ -12,25 +12,35 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-aria.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-messages.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.7/angular-material.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="js/app.js" charset="utf-8"></script>
   </head>
   <body ng-app='dotti_App' ng-controller='MainController as ctrl'>
-    <div class="frame" id="heroShot">
-      <img src="img/Dotti-Logo-RGB-White-01.png" alt="Dotti" id=logo>
-      <h2 class="subHead">An Independent Creative Agency</h2>
+    <div class="frame" id="header">
+      <video id="heroVideo" class="frame" autoplay loop muted preload="auto">
+        <source src="https://s3.amazonaws.com/dotti-agency/herovideo.mp4" type="video/mp4"/>
+      </video>
+      <div class="overlay">
+        <div class="nav">
+          <img src="img/Dotti-Logo-RGB-White-01.png" alt="Dotti" id=logo>
+          <div class="navLinks">
+            <h4>About</h4>
+            <h4>Work</h4>
+            <h4>Contact</h4>
+          </div>
+        </div>
+        <h2 class="subHead">An Independent Creative Agency</h2>
+      </div>
     </div>
     <div class="frame" id="content">
       <div class="contentWrap">
-        <h1>We generate content from the ground up <i class="far fa-caret-square-up"></i></h1>
+        <h1>We generate content from the ground up</h1>
         <p>Advertisements are everywhere and they can often be invasive and annoying. Some are also able to grab our attention, cross a line, reach people, contribute, and excite.
         </p>
         <p>We believe in creative ideas that add value through various channels and with one clear direction. We believe in brands that do not talk about themselves, but instead, do things and tell stories that are really interesting.
         </p>
       </div>
     </div>
-    <iframe class="" id="heroVideo" src="https://player.vimeo.com/video/162130313?autoplay=1&loop=1&color=ffffff&title=0&byline=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-    </iframe>
+
     <div class="frame" id="content">
       <div class="contentProjects">
         <h1>Our Work</h1>

@@ -6,6 +6,26 @@ h1 {
   margin: 0;
 }
 
+#heroVideo {
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index:0;
+}
+
+#header {
+  position:relative;
+}
+
+.overlay {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1;
+  width: 100%;
+}
+
 .nav {
   width: 100%;
   display: flex;
@@ -59,10 +79,6 @@ h1 {
   font-weight: 300;
 }
 
-video {
-  z-index: -1;
-}
-
 #content{
   background-color: #fff;
   display: flex;
@@ -93,26 +109,6 @@ p {
   font-size: 21px;
   line-height: 29.4px;
   letter-spacing: 1.26px;
-}
-
-#heroVideo {
-  min-width: 100%;
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-  position:relative;
-  z-index:0;
-}
-
-#header {
-  position:relative;
-}
-
-.overlay {
-  position:absolute;
-  top:0;
-  left:0;
-  z-index:1;
 }
 
 md-tabs {

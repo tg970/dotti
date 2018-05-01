@@ -9,12 +9,20 @@ require('pretty-error').start();
 // CONFIG
 const PORT       = process.env.PORT || 3000;
 
+// CONFIG Morgan skip
+
+skipLog = (req, res) => {
+  if (req.url.indexOf('/socket.io') !== -1) return true;
+  if (req.url.indexOf('/browser-sync/index.min.js.map') !== -1) return true;
+  return false;
+}
+
 // Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static('public'));
 app.use(morgan('tiny', {
-  skip: function(req, res) { return req.url.indexOf('/socket.io') !== -1 }
+  skip: skipLog
 }));
 
 app.listen(PORT, () => {

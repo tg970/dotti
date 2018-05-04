@@ -19,9 +19,9 @@
         <div class="nav">
           <img src="img/Dotti-Logo-RGB-White-01.png" alt="Dotti" id=logo>
           <div class="navLinks">
-            <h4>About</h4>
-            <h4>Work</h4>
-            <h4>Contact</h4>
+            <a class="navLink" href="#work"><h4>Work</h4></a>
+            <a class="navLink" href="#about"><h4>About</h4></a>
+            <a class="navLink" href="#contact"><h4>Contact</h4></a>
           </div>
         </div>
         <h2 class="subHead">An Independent Creative Agency</h2>
@@ -30,6 +30,9 @@
     <div class="frame" id="content">
       <div class="contentWrap">
         <h1>We generate content from the ground up</h1>
+        <div class="demoReel">
+
+        </div>
         <p>Advertisements are everywhere and they can often be invasive and annoying. Some are also able to grab our attention, cross a line, reach people, contribute, and excite.
         </p>
         <p>We believe in creative ideas that add value through various channels and with one clear direction. We believe in brands that do not talk about themselves, but instead, do things and tell stories that are really interesting.
@@ -37,9 +40,83 @@
       </div>
     </div>
 
-    <div class="frame" id="content">
+    <div class="frame content" id="work">
+      <div class="projectTiles">
+        <div class="projectCol1">
+          <div class="proImgSM"
+            ng-mouseenter="ctrl.p1 = true"
+            ng-mouseleave="ctrl.p1 = false">
+            <img class="proImg" src="https://placeimg.com/384/355/arch">
+            <div class="proImgOverlay">
+              <div class="iconBtn" ng-hide="!ctrl.p1">
+                <md-tooltip md-delay="500" md-direction="bottom">
+                  See project
+                </md-tooltip>
+                <img class="" src="img/play.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="proImgSM"
+            ng-mouseenter="ctrl.p2 = true"
+            ng-mouseleave="ctrl.p2 = false">
+            <img class="proImg" src="https://placeimg.com/384/355/nature">
+            <div class="proImgOverlay">
+              <div class="iconBtn" ng-hide="!ctrl.p2">
+                <md-tooltip md-delay="500" md-direction="bottom">
+                  See project
+                </md-tooltip>
+                <img class="" src="img/play.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="proImgSM"
+            ng-mouseenter="ctrl.p3 = true"
+            ng-mouseleave="ctrl.p3 = false">
+            <img class="proImg" src="https://placeimg.com/384/355/people">
+            <div class="proImgOverlay">
+              <div class="iconBtn" ng-hide="!ctrl.p3">
+                <md-tooltip md-delay="500" md-direction="bottom">
+                  See project
+                </md-tooltip>
+                <img class="" src="img/play.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="proImgSM"
+            ng-mouseenter="ctrl.p4 = true"
+            ng-mouseleave="ctrl.p4 = false">
+            <img class="proImg" src="https://placeimg.com/384/355/tech">
+            <div class="proImgOverlay">
+              <div class="iconBtn" ng-hide="!ctrl.p4">
+                <md-tooltip md-delay="500" md-direction="bottom">
+                  See project
+                </md-tooltip>
+                <img class="" src="img/play.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projectCol2">
+          <div class="proImg"
+            ng-mouseenter="ctrl.p5 = true"
+            ng-mouseleave="ctrl.p5 = false">
+            <img class="proImgLG" src="https://placeimg.com/512/707/animals">
+            <div class="proImgOverlay">
+              <div class="iconBtn" ng-hide="!ctrl.p5">
+                <md-tooltip md-delay="500" md-direction="bottom">
+                  See project
+                </md-tooltip>
+                <img class="" src="img/play.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="frame" id="content">
       <div class="contentProjects">
-        <h1>Our Work</h1>
+        <h1>Our Work (TABS)</h1>
       </div>
       <div class="project">
         <md-tabs md-border-bottom>
@@ -69,8 +146,8 @@
           </md-tab>
         </md-tabs>
       </div>
-    </div>
-    <div class="frame" id="content">
+    </div> -->
+    <div class="frame content" id="about">
       <div class="contentTeam">
         <strong><h1>Team</h1></strong>
       </div>
@@ -83,7 +160,7 @@
         </div>
       </div>
     </div>
-    <footer>
+    <footer id="contact">
     </footer>
   </body>
 </html>

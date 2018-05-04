@@ -265,23 +265,27 @@ md-tab-item {
   margin: 0;
   text-align: center;
 }
+/* = = = = = = = = = = = */
+.about {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-.team {
-  width: 60%;
-  height: 70%;
+.aboutSection {
+  /* border: 1px solid green; */
+  height: 20%;
+  width: 90%;
+  max-width: 1280px;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
 }
 
-.dude {
-  width: 40%;
-  height: 80%;
-  background-color: gray;
-}
 
 footer {
   height: 50vh;
-  background-color: black
+  /* background-color: black; */
 }

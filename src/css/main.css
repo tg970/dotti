@@ -290,6 +290,7 @@ md-tab-item {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  background-color: #fff;
 }
 
 .contact {
@@ -305,6 +306,26 @@ md-tab-item {
   letter-spacing: 1px;
 }
 
+.contactLine {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29.4px;
+  letter-spacing: 1.26px;
+  color: black;
+}
+
+.contactLine:hover {
+  box-shadow: 1px 1px 10px 2px #888;
+}
+
+.contactIcon {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
 #map {
   width: 45%;
   height: 90%;
@@ -313,4 +334,8 @@ md-tab-item {
 footer {
   height: 50vh;
   /* background-color: black; */
+}
+
+.noLink {
+  text-decoration: none;
 }
